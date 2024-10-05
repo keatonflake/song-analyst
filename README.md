@@ -4,8 +4,9 @@
 
 In this dataset, we observe statistics about the top 100 songs as recorded on Spotify. For more details, please refer to the original dataset on Kaggle: [Top 100 Songs Dataset](https://www.kaggle.com/datasets/thebumpkin/600-billboard-hot-100-tracks-with-spotify-data).
 
-[Software Demo Video](https://youtu.be/X0zyIVkeNwM)
-[Live Project](https://keatonflake.github.io/song-analyst/)
+### [Software Demo Video](https://youtu.be/X0zyIVkeNwM)
+
+### [Live Project](https://keatonflake.github.io/song-analyst/)
 
 # Development Environment
 
@@ -37,12 +38,7 @@ Result: longer songs tend to be more popular.
 # Runing the Python Code
 
 Install Dependencies:
-pandas
-matplotlib
-seaborn
-numpy
-plotly
-scikit-learn
+pandas | matplotlib | seaborn | numpy | plotly | scikit-learn
 
 Run the main.py file
 
