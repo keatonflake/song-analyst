@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popularity vs Duration</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <h1 class="title">Conclusions From Spotify Top 100</h1>
+
+    <div>
+        <a href="#artistSummary"><button>Artist Popularity Analysis</button></a>
+        <a href="#popularity_vs_energy"><button>Song Popularity VS Energy</button></a>
+        <a href="#popularity_vs_duration"><button>Song Popularity VS Energy</button></a>
+    </div>
+
+    <div id="project_summary">
+        <h1>Project Summary</h1>
+        <p>This project explores the relationship between popularity and duration of songs recorded on Spotify. The
+            dataset includes various songs by multiple artists, along with metrics such as duration, energy,
+            danceability, loudness, and average popularity scores. Using Python Pandas and Plotly, and javascript.
+            I attempted to answer 3 questions:</p>
+        <div class="list">
+            <p>1. Based on this dataset what is the ranked list of artists by popularity?</p>
+            <p>2. What is the relationship between popularity and energy?</p>
+            <p>3. What is the relationship between popularity and duration?</p>
+        </div>
+        <a href="https://www.kaggle.com/datasets/thebumpkin/600-billboard-hot-100-tracks-with-spotify-data/data">
+            Link: Click to view dataset on Kaggle
+        </a>
+    </div>
+
+    <div class="summary" id="artistSummary">
+        <h1>Artist Summary</h1>
+        <p>The dataset includes various songs by multiple artists, along with metrics such as
+            duration, energy, danceability, loudness, and average popularity scores. The popularity scores range from 0
+            to 100, indicating the average popularity of each artist based on their recorded songs.</p>
+        <canvas id="popularityChart" width="500" height="300"></canvas>
+        <p>Conclusion: At the time of this dataset "The Weeknd" was the #1 most popular artist</p>
+    </div>
+
+    <div class="summary" id="popularity_vs_energy">
+        <h1>Popularity vs. Energy</h1>
+        <p>The relationship between popularity and energy is explored by plotting the average
+            popularity scores against the energy levels of the artists’ songs. Energy levels range from 0 to 1, where
+            lower values indicate a more relaxed feel and higher values indicate a more intense and energetic feel.</p>
+        <img src="./data_analyst/popularity_vs_energy.png" alt="popularity_vs_energy">
+        <a href="./data_analyst/popularity_vs_energy.html">Click to view interactive scatter plot</a>
+        <p>Conclusion: Suprisingly, based on this dataset, there is a slight correlation between lower energy and more
+            popularity. Though it is in the margin of error, it is still noticable.</p>
+    </div>
+
+    <div class="summary" id="popularity_vs_duration">
+        <h1>Popularity vs. Duration</h1>
+        <p>The analysis of popularity against song duration examines how the length of songs
+            (measured in milliseconds) impacts their average popularity scores.
+            This relationship can reveal whether shorter or longer songs tend to be more
+            popular. For instance, if shorter songs show higher popularity, it might suggest that audiences prefer
+            quick, catchy tunes. Alternatively, longer songs may indicate deeper engagement when they resonate well with
+            listeners.</p>
+        <img src="./data_analyst/popularity_vs_duration.png" alt="popularity_vs_energy">
+        <a href="./data_analyst/popularity_vs_duration.html">Click to view interactive scatter plot</a>
+        <p>Conclusion: longer songs tend to be more popular.</p>
+    </div>
+
+    <footer>
+        <p>Keaton Flake 2024</p>
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
